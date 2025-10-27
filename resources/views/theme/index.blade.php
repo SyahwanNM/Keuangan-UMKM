@@ -125,21 +125,7 @@
                     <div class="space-y-6">
 
                         <!-- Display Options -->
-                        <div class="overflow-hidden shadow-lg sm:rounded-xl theme-surface" style="border: 1px solid var(--color-text_secondary, #6B7280); position: relative; z-index: 2;">
-                            <div class="p-6">
-                                <h3 class="text-lg font-semibold style="color: var(--color-text, #1F2937);" mb-4">Opsi Tampilan</h3>
-                                <div class="space-y-4">
-                                    <label class="flex items-center">
-                                        <input type="checkbox" name="show_animations" value="1" {{ $preferences->show_animations ? 'checked' : '' }} class="rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
-                                        <span class="ml-3 text-sm style="color: var(--color-text_secondary, #6B7280);"">Tampilkan Animasi</span>
-                                    </label>
-                                    <label class="flex items-center">
-                                        <input type="checkbox" name="show_tooltips" value="1" {{ $preferences->show_tooltips ? 'checked' : '' }} class="rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
-                                        <span class="ml-3 text-sm style="color: var(--color-text_secondary, #6B7280);"">Tampilkan Tooltip</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+                       
 
                         <!-- Format Settings -->
                         <div class="overflow-hidden shadow-lg sm:rounded-xl theme-surface" style="border: 1px solid var(--color-text_secondary, #6B7280); position: relative; z-index: 2;">
@@ -166,13 +152,6 @@
                                         <select name="number_format" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                                             <option value="dot" {{ $preferences->number_format == 'dot' ? 'selected' : '' }}>Titik (1.000.000)</option>
                                             <option value="comma" {{ $preferences->number_format == 'comma' ? 'selected' : '' }}>Koma (1,000,000)</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label class="block text-sm font-medium style="color: var(--color-text_secondary, #6B7280);" mb-2">Bahasa</label>
-                                        <select name="language" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                            <option value="id" {{ $preferences->language == 'id' ? 'selected' : '' }}>Indonesia</option>
-                                            <option value="en" {{ $preferences->language == 'en' ? 'selected' : '' }}>English</option>
                                         </select>
                                     </div>
                                 </div>
